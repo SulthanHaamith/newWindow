@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Delay export link</title>
+        <style>
+            #Link{display:none;}
+        </style>
+        <script type="text/javascript">
+
+        function myFunction() {
+            myVar = setTimeout(show, 2000);
+        }
+
+        function show() {
+            document.getElementById("Link").style.display = "inline";
+        }
+
+        function exportSrc() {
+            var scrt_var = "www.google.com";
+            document.getElementById("Link").setAttribute("href",scrt_var);  
+        } 
+
+        </script>
+    </head>
+
+
+    <body onload="myFunction();">
+        <a id="Link" onclick="exportSrc();" target='_blank'>
+            <img src="http://i57.tinypic.com/mkw779.png">
+        </a>
+    </body>
+
+</html>

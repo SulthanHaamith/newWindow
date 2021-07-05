@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Sign-In Form</title>
+</head>
+<body> 
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+
+            <div class="showcase-form card">
+                <h2>Sign-In</h2>
+                 <form id="form">
+                    <div class="form-control">
+                        <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <input type="button" value="Submit" class="btn btn-primary" id="submit-form">
+                    <div class="error" id="error-msg" style="display: none;">
+                        Error Occured
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>
